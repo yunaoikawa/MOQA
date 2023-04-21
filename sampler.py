@@ -183,7 +183,7 @@ scores=(-1.)*SLayers
 #FM training
 model = fmqa.FMBQM.from_data(vectors_all, scores)
 #Simulated annealing for sampling
-sampler = dimod.samplers.SimulatedAnnealingSampler()
+sampler = dimod.samplers.RandomSampler()
 
 #Sampling/Evaluation/Training
 for _ in range(200):
